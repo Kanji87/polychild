@@ -1,0 +1,62 @@
+/*---
+footer.scss
+---*/
+
+.page-footer {
+  border-bottom: 1px solid #e0e0e0;
+  border-top: 1px solid #e0e0e0;
+  overflow: hidden;
+}
+
+.page-footer__inner {
+  width: $page-width;
+  background-color: #ffc039;
+  font-size: $fz-footer;
+}
+
+.footer-block {
+  height: 77px;
+  position: relative;
+}
+
+.footer-block__copyright {
+  height: 100%;
+  margin-right: 125px;
+  color: #b2b2b2;
+
+  p {
+    padding: 0 10px;
+    line-height: 1;
+  }
+}
+
+.footer-block__full-version {
+  height: 33px;
+
+  a {
+    text-decoration: underline;
+    display: block;
+    border-left: 2px solid #b2b2b2;
+    padding-left: 15px;
+    line-height: 1.2;
+    color: #b2b2b2;
+  }
+}
+
+.footer-block__social-item {
+  font-size: 16px;
+  color: #b2b2b2;
+  font-weight: 100;
+  padding-left: 40px;
+  line-height: 30px;
+  height: 30px;
+  display: block;
+
+  &.icon-fb {
+    margin-right: 55px;
+  }
+
+  &:hover {
+    color: #b2b2b2;
+  }
+}

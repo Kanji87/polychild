@@ -1,0 +1,90 @@
+/*---
+general.scss
+---*/
+
+/* Variables */
+$page-width: 1280px;
+$icon-grey: #b2b2b2;
+$black: #333;
+$blue: #06f;
+$white: #fff;
+
+// Font sizes
+$fz-footer: 12px;
+$fz-menu: 18px;
+$fz-heading: 20px;
+
+// Image paths
+$imgPath: "../img";
+$iconPath: "../img/icons";
+
+/* Mixins */
+
+
+/* Styles */
+body {
+  font-family: PolytechSans, helvetica, sans-serif;
+  color: $black;
+  padding-bottom: 85px;
+}
+
+a {
+  color: $black;
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+.vcenter {
+  display: table;
+
+  > * {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.col:not(:first-child),
+.col:not(:last-child) {
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.content {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-top: 24px;
+  padding-bottom: 33px;
+  min-height: 500px;
+  -moz-transition: all 300ms;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.main {
+  position: relative;
+  width: $page-width;
+  overflow: hidden;
+  min-height: 625px;
+}
+
+.icon-fb {
+  background-image: url(#{$iconPath}/fb_icon.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+
+.icon-vk {
+  background-image: url(#{$iconPath}/vk_icon.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+}

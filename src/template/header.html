@@ -1,0 +1,29 @@
+<header class="page-header">
+    <div class="center-block page-header__inner">
+        <div class="menu-trigger"></div>
+        <div class="page-header__social">
+            <a class="page-header__social-item icon-fb pull-left" href="#"></a>
+            <a class="page-header__social-item icon-vk pull-left" href="#"></a>
+        </div>
+        <a class="page-header__logo" href="index.html"></a>
+        <div class="page-header__search pull-right">
+            <div class="page-header__search-robot"></div>
+            <form class="page-header__search-form" action="">
+                <input class="page-header__search-input" name="search" type="text" placeholder="">
+                <i class="page-header__search-icon page-header__search-icon--unfocused"></i>
+                <i class="page-header__search-icon page-header__search-icon--focused"></i>
+                <!--<input class="page-header__search-submit" value="" type="submit">-->
+            </form>
+            <script type="text/javascript">
+                $(function(){
+                    $('.page-header__search-input').focusin(function(){
+                        $('.page-header__search').addClass('focused');
+                    });
+                    $('.page-header__search-input').focusout(function(){
+                        $('.page-header__search').removeClass('focused');
+                    });
+                });
+            </script>
+        </div>
+    </div>
+</header>
